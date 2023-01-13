@@ -1,9 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Container from "./component/container";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Body from "./component/Body";
 function App() {
-  return <Container />;
-  <div></div>;
+  return (
+    <>
+      <Header />
+      <Body />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
