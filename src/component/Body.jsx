@@ -2,6 +2,7 @@ import Product from "./Product";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import { useState } from "react";
+import PopUp from "./PopUp";
 
 const Body = (props) => {
   const data = [
@@ -10,30 +11,35 @@ const Body = (props) => {
       img: "../assets/dress3.jpg",
       price: "$10.99",
       size: ["xs", "s", "l"],
+      info:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
     },
     {
       title: "Midi sundress with ruched front",
       img: "../assets/dress3.jpg",
       price: "$10.99",
       size: ["xs", "s", "l"],
+      info:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
     },
     {
       title: "Midi sundress with ruched front",
       img: "../assets/dress3.jpg",
       price: "$10.99",
       size: ["xs", "s", "l"],
+      info:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
     },
     {
       title: "Midi sundress with ruched front",
       img: "../assets/dress3.jpg",
       price: "$10.99",
       size: ["xs", "s", "l"],
+      info:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
     },
     {
       title: "Midi sundress with ruched front",
       img: "../assets/dress3.jpg",
       price: "$10.99",
       size: ["xs", "s", "l"],
+      info:"This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
     },
   ];
   const orders = (order) => {
@@ -74,6 +80,7 @@ const Body = (props) => {
                 price={item.price}
                 img={item.img}
                 size={item.size}
+                info={item.info}
               />
             );
           })}
@@ -94,6 +101,7 @@ const Body = (props) => {
           <Checkout />
         </div>
       </div>
+      <PopUp />
     </div>
   );
 };
