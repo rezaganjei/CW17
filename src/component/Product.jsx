@@ -9,8 +9,8 @@ const Product = (props) => {
         {props.title}
       </div>
       <div className="flex justify-between items-center">
-        <div>{props.price}</div>
-        <button className="bg-yellow-500 p-2" onClick={() => props.order(props.price)}>
+        <div>${props.price}</div>
+        <button className="bg-yellow-500 p-2" onClick={() => props.addToCard()}>
           Add to Card
         </button>
       </div>
