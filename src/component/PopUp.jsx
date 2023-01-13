@@ -20,7 +20,7 @@ const PopUp = (props) => {
         </div>
         <div className="flex justify-between items-center">
             <p>Price <span>${props.price}</span></p>
-            <button className="bg-yellow-500 p-2">
+            <button className="bg-yellow-500 p-2" onClick={() => props.addToCard()}>
                 Add to Card
             </button>        </div>
     </div>

@@ -11,18 +11,17 @@ const Product = (props) => {
   return (
     <>
 
-    <PopUp modalIsOpen={modalIsOpen} changeModalState={changeModalState} image={props.img} title={props.title} size={props.size} info={props.info} price={props.price}/>
+    <PopUp modalIsOpen={modalIsOpen} addToCard={props.addToCard} changeModalState={changeModalState} image={props.img} title={props.title} size={props.size} info={props.info} price={props.price}/>
     <div className="flex flex-col gap-3 py-4 w-1/3 p-2">
       <div>
-        {" "}
         <img src={props.img}></img>
       </div>
       <div className="text-center hover:text-orange-400 hover:cursor-pointer" onClick={()=>setModalIsOpen(true)} >
         {props.title}
       </div>
       <div className="flex justify-between items-center">
-        <div>{props.price}</div>
-        <button className="bg-yellow-500 p-2" onClick={() => props.order(props.price)}>
+        <div>${props.price}</div>
+        <button className="bg-yellow-500 p-2" onClick={() => props.addToCard()}>
           Add to Card
         </button>
       </div>
